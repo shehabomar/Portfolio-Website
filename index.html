@@ -150,7 +150,7 @@
                             <div data-aos="zoom-in">
                                 <div class="about-profile-box info-box shadow-box h-full">
                                     <div class="inner-profile-icons shadow-box">
-                                        <a href="https://www.linkedin.com/in/omar-shehab-5231611a2/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/omar-shehab-5231611a2/" target="">
                                             <i class="iconoir-linkedin"></i>
                                         </a>
                                         <a href="https://github.com/shehabomar" target="_blank">
@@ -236,8 +236,12 @@
     </main>
     
     <script>
+        // flag for doing the animation once
         let flag = true;
+        
         window.addEventListener('scroll', function () {
+            
+            // calling the animateValue function to animate the numbers of the ids with different time intervals based on the speed of scrolling
             if(window.scrollY > 20 && flag === true){  
                 flag = false;
                 animateValue("years", 0, 5, 2000);
